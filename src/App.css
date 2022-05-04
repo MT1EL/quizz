@@ -1,0 +1,104 @@
+body,
+*::after,
+*::before,
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2b6777;
+}
+.home-container {
+  width: min(50em, 100%);
+  margin: auto;
+  /* margin-top: 25%;
+  transform: translateY(-50%); */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form * {
+  width: 50%;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+}
+p {
+  margin: 0em;
+}
+select,
+input {
+  border-radius: 10px;
+  border: none;
+}
+.quizButton {
+  padding-block: 1em;
+  background-color: #f53ab3;
+  border: none;
+  border-radius: 10px;
+}
+
+.total {
+  color: white;
+  text-align: center;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: min(45em, 90%);
+  min-height: 25em;
+  background-color: aquamarine;
+  color: #2b6777;
+  padding-block: 5em;
+  padding-inline: 3em;
+}
+.answers {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+.answer {
+  padding: 0.5em;
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: #2b6777;
+  color: white;
+  border: 1px solid wheat;
+  width: 150px;
+  margin-bottom: 0.5em;
+}
+.correct {
+  background-color: green;
+}
+.wrong {
+  background-color: red;
+}
+
+.nextQuestion {
+  cursor: pointer;
+}
+.start {
+  background-color: #f53ab3;
+  border: none;
+  border-radius: 15px;
+  width: 200px;
+  height: 40px;
+  margin-top: 1em;
+}
