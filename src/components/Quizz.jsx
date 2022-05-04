@@ -119,14 +119,14 @@ function Quizz({ selects, data, formik }) {
             </button>
           ))}
         </div>
-        <h1
+        <button
           onClick={() => {
             questionIndex < amount - 1 && handleClicK();
           }}
           className="nextQuestion"
         >
           next Question
-        </h1>
+        </button>
         <h1>
           Your Point: {points} / {questionIndex + 1}
         </h1>
