@@ -65,11 +65,17 @@ function Home({ formik }) {
             );
           })}
         </select>
-        <Link to="/quizz">
+        {formik.values.amount ? (
+          <Link to="/quizz">
+            <button type="submit" className="quizButton">
+              click
+            </button>
+          </Link>
+        ) : (
           <button type="submit" className="quizButton">
             click
           </button>
-        </Link>
+        )}
       </form>
     </div>
   );
